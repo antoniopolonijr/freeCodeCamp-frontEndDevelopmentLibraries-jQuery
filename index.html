@@ -4,17 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>jQuery Playground</title>
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <!-- Before we can start using jQuery, we need to add some things to our HTML. First, add a script element at the top of your page. Be sure to close it on the following line. Your browser will run any JavaScript inside a script element, including jQuery. Inside your script element, add this code: $(document).ready(function() { to your script. Then close it on the following line (still inside your script element) with: }); We'll learn more about functions later. The important thing to know is that code you put inside this function will run as soon as your browser has loaded your page. This is important because without your document ready function, your code may run before your HTML is rendered, which would cause bugs. -->
     <script>
-      $(document).ready(function () {});
+      $(document).ready(function () {
+        /* Now we have a document ready function. Now let's write our first jQuery statement. All jQuery functions start with a $, usually referred to as a dollar sign operator, or as bling. jQuery often selects an HTML element with a selector, then does something to that element. For example, let's make all of your button elements bounce.
+        Just add this code inside your document ready function:
+        $("button").addClass("animated bounce");
+        Note that we've already included both the jQuery library and the Animate.css library in the head. So you are using jQuery to apply the Animate.css bounce class to your button elements. */
+        $("button").addClass("animated bounce");
+      });
     </script>
 
     <!-- Only change code above this line -->
