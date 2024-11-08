@@ -61,6 +61,10 @@
 
         /* jQuery has a function called appendTo() that allows you to select HTML elements and append them to another element. */
         $("#target2").appendTo("#right-well");
+
+        /* jQuery has a function called clone() that makes a copy of an element.
+        Did you notice this involves sticking two jQuery functions together? This is called function chaining and it's a convenient way to get things done with jQuery. */
+        $("#target5").clone().appendTo("#left-well");
       });
     </script>
 
