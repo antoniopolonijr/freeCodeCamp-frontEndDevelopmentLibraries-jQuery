@@ -47,6 +47,9 @@
 
         /* We can also change the CSS of an HTML element directly with jQuery. jQuery has a function called .css() that allows you to change the CSS of an element. This is slightly different from a normal CSS declaration, because the CSS property and its value are in quotes, and separated with a comma instead of a colon. */
         $("#target1").css("color", "red");
+
+        /* You can also change the non-CSS properties of HTML elements with jQuery. For example, you can disable buttons. When you disable a button, it will become grayed-out and can no longer be clicked. jQuery has a function called .prop() that allows you to adjust the properties of elements. */
+        $("#target1").prop("disabled", true);
       });
     </script>
 
