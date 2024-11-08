@@ -14,7 +14,7 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -28,6 +28,8 @@
         $("button").addClass("animated bounce");
         Note that we've already included both the jQuery library and the Animate.css library in the head. So you are using jQuery to apply the Animate.css bounce class to your button elements. */
         $("button").addClass("animated bounce");
+        /* You see how we made all of your button elements bounce? We selected them with $("button"), then we added some CSS classes to them with .addClass("animated bounce");. You just used jQuery's .addClass() function, which allows you to add classes to elements. First, let's target your div elements with the class well by using the $(".well") selector. Note that, just like with CSS declarations, you type a . before the class's name. Then use jQuery's .addClass() function to add the classes animated and shake. */
+        $(".well").addClass("animated shake");
       });
     </script>
 
