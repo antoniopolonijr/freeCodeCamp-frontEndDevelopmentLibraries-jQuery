@@ -65,6 +65,9 @@
         /* jQuery has a function called clone() that makes a copy of an element.
         Did you notice this involves sticking two jQuery functions together? This is called function chaining and it's a convenient way to get things done with jQuery. */
         $("#target5").clone().appendTo("#left-well");
+
+        /* Every HTML element has a parent element from which it inherits properties. For example, the h3 element in your jQuery Playground has the parent element of <div class="container-fluid">, which itself has the parent element of body. jQuery has a function called parent() that allows you to access the parent of whichever element you've selected. */
+        $("#target1").parent().css("background-color", "red");
       });
     </script>
 
