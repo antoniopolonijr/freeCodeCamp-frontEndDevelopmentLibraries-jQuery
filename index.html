@@ -71,6 +71,9 @@
 
         /* When HTML elements are placed one level below another they are called children of that element. For example, the button elements in this challenge with the text #target1, #target2, and #target3 are all children of the <div class="well" id="left-well"> element. jQuery has a function called children() that allows you to access the children of whichever element you've selected. */
         $("#right-well").children().css("color", "orange");
+
+        /* You've seen why id attributes are so convenient for targeting with jQuery selectors. But you won't always have such neat ids to work with. Fortunately, jQuery has some other tricks for targeting the right elements. jQuery uses CSS Selectors to target elements. The target:nth-child(n) CSS selector allows you to select all the nth elements with the target class or element type. */
+        $(".target:nth-child(2)").addClass("animated bounce");
       });
     </script>
 
